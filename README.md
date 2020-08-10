@@ -21,7 +21,17 @@
 3. GET: http://localhost:8080/tournaments/{id}/users
 4. Вы видите список участников
 
-#Задача: 
+Чтобы добавить матч:
+1. Создать юзеров
+2. GET: /
+3. NON-GET: POST: http://localhost:8080/matches 
+    - tour >= 1
+4. NON-GET: PATCH: http://localhost:8080/matches/{id}
+    - leftUser: [url_to_user]
+    - rightUser: [url_to_user]
+5. Вы создали матч с участниками
+
+##Задача 
 ### Summary
 
 A web service (HTTP REST API) to work with tournaments.
